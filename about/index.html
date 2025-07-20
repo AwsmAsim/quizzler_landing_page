@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizzlerAI Play - About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-dark: #4338ca;
+            --text: #1f2937;
+            --muted: #4b5563;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --border: #e5e7eb;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .logo:hover {
+            transform: translateY(-1px);
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+        .logo img:hover {
+            transform: scale(1.05);
+        }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .app-store-btn {
+            background-color: var(--primary);
+            color: #fff;
+            text-decoration: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
+        }
+        .app-store-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+            background: linear-gradient(135deg, var(--bg) 0%, #ffffff 100%);
+            border-radius: 1rem;
+            margin-bottom: 4rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: var(--text);
+            font-size: 1.75rem;
+            margin: 3rem 0 1.5rem;
+            font-weight: 600;
+        }
+        h3 {
+            color: var(--text);
+            font-size: 1.25rem;
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--muted);
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+        .highlight-box {
+            background: var(--card-bg);
+            border-left: 4px solid var(--primary);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .contact-info {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin: 3rem 0;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        .contact-info h3 {
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 3rem 0 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+        .footer-copyright {
+            color: var(--muted);
+            font-size: 0.875rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+            .nav-actions {
+                width: 100%;
+                justify-content: center;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero {
+                padding: 3rem 1rem 2rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="logo">
+                <img src="../assets/qizzler-play-logo-play-icon.png" alt="QuizzlerAI Play Logo">
+                <div class="logo-text">QuizzlerAI Play</div>
+            </a>
+            <div class="nav-actions">
+                <a href="https://apps.apple.com/us/app/quizzlerai-play/id6746399137" class="app-store-btn">App Store</a>
+            </div>
+        </nav>
+        
+        <section class="hero">
+            <h1>About QuizzlerAI Play</h1>
+            <p>Discover how we're revolutionizing quiz gaming with AI-powered question generation and real-time multiplayer experiences.</p>
+        </section>
+        
+        <div class="content">
+            <div class="highlight-box">
+                <p>QuizzlerAI Play revolutionizes the quiz experience by combining artificial intelligence with real-time multiplayer gaming, creating engaging educational and entertainment experiences for users of all ages.</p>
+            </div>
+            
+            <h2>Our Mission</h2>
+            <p>To make learning fun and accessible through AI-powered quizzes that adapt to every user's interests and skill level. We believe that knowledge sharing should be interactive, social, and enjoyable.</p>
+            
+            <h2>How It Works</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">1</div>
+                    <h3>Create Your Quiz</h3>
+                    <p>Enter your topic, set difficulty level, choose language, and specify other preferences. Our AI generates unique questions tailored to your requirements.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">2</div>
+                    <h3>Invite Friends</h3>
+                    <p>Share your quiz with friends or join public games. Experience real-time competition with live leaderboards and instant results.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">3</div>
+                    <h3>Play & Learn</h3>
+                    <p>Answer questions within the time limit, see your rank update in real-time, and learn from detailed explanations and statistics.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">4</div>
+                    <h3>Track Progress</h3>
+                    <p>Monitor your performance across different topics, compete on global leaderboards, and discover areas for improvement.</p>
+                </div>
+            </div>
+            
+            <h2>Key Features</h2>
+            
+            <h3>🤖 Advanced AI Technology</h3>
+            <p>Our proprietary AI system generates high-quality, contextually relevant questions across thousands of topics. The AI adapts to different age groups, difficulty levels, and learning objectives.</p>
+            
+            <h3>⚡ Real-Time Multiplayer</h3>
+            <p>Experience the thrill of live competition with friends and players worldwide. See answers and rankings update instantly as everyone competes simultaneously.</p>
+            
+            <h3>🎯 Personalization</h3>
+            <p>Customize every aspect of your quiz experience:</p>
+            <ul>
+                <li>Topic selection with keyword specification</li>
+                <li>Age-appropriate content filtering</li>
+                <li>Multiple difficulty levels</li>
+                <li>Adjustable time limits</li>
+                <li>Multi-language support</li>
+                <li>Variable question counts</li>
+            </ul>
+            
+            <h3>📊 Comprehensive Analytics</h3>
+            <p>Track your learning journey with detailed statistics, performance trends, and personalized insights to help you improve.</p>
+            
+            <h2>Technology Stack</h2>
+            
+            <h3>Backend Infrastructure</h3>
+            <ul>
+                <li><strong>Firebase:</strong> Real-time database, authentication, and cloud functions</li>
+                <li><strong>AI Services:</strong> Advanced natural language processing for question generation</li>
+                <li><strong>Cloud Storage:</strong> Secure, scalable data storage and retrieval</li>
+            </ul>
+            
+            <h3>Authentication & Security</h3>
+            <ul>
+                <li><strong>Multi-platform Login:</strong> Email, Google, and Apple ID support</li>
+                <li><strong>End-to-end Encryption:</strong> All data transmission is secure</li>
+                <li><strong>Privacy by Design:</strong> Minimal data collection with user control</li>
+            </ul>
+            
+            <h2>Supported Platforms</h2>
+            
+            <ul>
+                <li><strong>iOS:</strong> Full feature support including Apple ID login</li>
+                <li><strong>Android:</strong> Complete functionality with Google integration</li>
+                <li><strong>Cross-platform:</strong> Play with friends regardless of their device</li>
+            </ul>
+            
+            <h2>Educational Applications</h2>
+            
+            <h3>For Students</h3>
+            <ul>
+                <li>Study for exams with AI-generated practice questions</li>
+                <li>Learn new topics through interactive quizzes</li>
+                <li>Compete with classmates to make learning social</li>
+            </ul>
+            
+            <h3>For Educators</h3>
+            <ul>
+                <li>Create engaging classroom activities</li>
+                <li>Assess student knowledge in real-time</li>
+                <li>Generate quizzes for any curriculum topic</li>
+            </ul>
+            
+            <h3>For Families</h3>
+            <ul>
+                <li>Educational game nights with age-appropriate content</li>
+                <li>Learn together across different skill levels</li>
+                <li>Safe, moderated environment for children</li>
+            </ul>
+            
+            <h2>Community Guidelines</h2>
+            
+            <p>QuizzlerAI Play is built on principles of respect, learning, and fun. We maintain a safe environment through:</p>
+            <ul>
+                <li>AI-powered content moderation</li>
+                <li>Community reporting systems</li>
+                <li>Clear guidelines for appropriate content</li>
+                <li>Swift response to violations</li>
+            </ul>
+            
+            <h2>Future Roadmap</h2>
+            
+            <p>We're constantly evolving to serve our community better:</p>
+            <ul>
+                <li>Advanced AI personalization based on learning patterns</li>
+                <li>Team-based competitions and tournaments</li>
+                <li>Integration with educational platforms</li>
+                <li>Offline quiz generation and play</li>
+                <li>Enhanced social features and communities</li>
+                <li>Voice-activated quiz experiences</li>
+            </ul>
+            
+            <h2>Contact & Support</h2>
+            
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><strong>Support Email:</strong> this.is.awsm.asim@gmail.com</p>
+                <p><strong>Legal Inquiries:</strong> this.is.awsm.asim@gmail.com</p>
+                <p><strong>Last Updated:</strong> June 2025</p>
+            </div>
+            
+            <p>We're committed to providing an exceptional quiz experience that combines learning, entertainment, and social interaction. Thank you for being part of the QuizzlerAI Play community!</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms-of-use">Terms of Use</a>
+                <a href="/about">About</a>
+                <a href="/cookie-policy">Cookie Policy</a>
+                <a href="/eula">EULA</a>
+            </div>
+            <div class="footer-copyright">
+                © 2025 QuizzlerAI Play. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

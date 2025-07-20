@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizzlerAI Play - EULA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-dark: #4338ca;
+            --text: #1f2937;
+            --muted: #4b5563;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --border: #e5e7eb;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .logo:hover {
+            transform: translateY(-1px);
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+        .logo img:hover {
+            transform: scale(1.05);
+        }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .app-store-btn {
+            background-color: var(--primary);
+            color: #fff;
+            text-decoration: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
+        }
+        .app-store-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+            background: linear-gradient(135deg, var(--bg) 0%, #ffffff 100%);
+            border-radius: 1rem;
+            margin-bottom: 4rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .last-updated {
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.95rem;
+            border: 1px solid var(--border);
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: var(--text);
+            font-size: 1.75rem;
+            margin: 3rem 0 1.5rem;
+            font-weight: 600;
+        }
+        h3 {
+            color: var(--text);
+            font-size: 1.25rem;
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--muted);
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+        strong {
+            color: var(--text);
+        }
+        .highlight-box {
+            background: var(--card-bg);
+            border-left: 4px solid var(--primary);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .contact-info {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin: 3rem 0;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        .contact-info h3 {
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 3rem 0 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+        .footer-copyright {
+            color: var(--muted);
+            font-size: 0.875rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+            .nav-actions {
+                width: 100%;
+                justify-content: center;
+            }
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero {
+                padding: 3rem 1rem 2rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="logo">
+                <img src="../assets/qizzler-play-logo-play-icon.png" alt="QuizzlerAI Play Logo">
+                <div class="logo-text">QuizzlerAI Play</div>
+            </a>
+            <div class="nav-actions">
+                <a href="https://apps.apple.com/us/app/quizzlerai-play/id6746399137" class="app-store-btn">App Store</a>
+            </div>
+        </nav>
+        
+        <section class="hero">
+            <h1>End-User License Agreement</h1>
+            <p>Legal agreement governing your use of the QuizzlerAI Play mobile application and related services.</p>
+        </section>
+        
+        <div class="content">
+            <div class="last-updated">Last Updated: June 11, 2025</div>
+            
+            <div class="highlight-box">
+                <p>This End-User License Agreement ("EULA") is a legal agreement between you and QuizzlerAI Play for the use of the QuizzlerAI Play mobile application software.</p>
+            </div>
+            
+            <h2>1. Grant of License</h2>
+            
+            <h3>1.1 License Grant</h3>
+            <p>Subject to the terms of this EULA, we grant you a limited, non-exclusive, non-transferable, revocable license to:</p>
+            <ul>
+                <li>Download and install the QuizzlerAI Play app on your compatible devices</li>
+                <li>Use the app for personal, non-commercial purposes</li>
+                <li>Access the app's features and services as intended</li>
+            </ul>
+            
+            <h3>1.2 License Restrictions</h3>
+            <p>You may not:</p>
+            <ul>
+                <li>Copy, modify, adapt, translate, or create derivative works of the app</li>
+                <li>Reverse engineer, disassemble, decompile, or attempt to derive source code</li>
+                <li>Remove, alter, or obscure any proprietary notices or labels</li>
+                <li>Distribute, sell, sublicense, rent, lease, or lend the app</li>
+                <li>Use the app for commercial purposes without express permission</li>
+                <li>Access the app through unauthorized third-party applications</li>
+            </ul>
+            
+            <h2>2. Intellectual Property Rights</h2>
+            
+            <h3>2.1 Ownership</h3>
+            <p>The QuizzlerAI Play app and all related intellectual property rights are and remain our exclusive property. This includes:</p>
+            <ul>
+                <li>Source code, object code, and executable files</li>
+                <li>User interface design and user experience</li>
+                <li>AI algorithms and question generation technology</li>
+                <li>Trademarks, logos, and brand elements</li>
+                <li>Documentation and help materials</li>
+            </ul>
+            
+            <h3>2.2 Third-Party Components</h3>
+            <p>The app may include third-party software components that are subject to separate license terms. These components are clearly identified and their respective licenses are incorporated by reference.</p>
+            
+            <h2>3. App Store Terms</h2>
+            
+            <h3>3.1 iOS App Store</h3>
+            <p>If you downloaded the app from Apple's App Store:</p>
+            <ul>
+                <li>This EULA is between you and us, not Apple</li>
+                <li>Apple is not responsible for the app or its content</li>
+                <li>Apple has no obligation to provide support for the app</li>
+                <li>You may contact Apple regarding refunds in accordance with Apple's policies</li>
+                <li>Apple is a third-party beneficiary of this EULA</li>
+            </ul>
+            
+            <h3>3.2 Google Play Store</h3>
+            <p>If you downloaded the app from Google Play:</p>
+            <ul>
+                <li>This EULA is between you and us, not Google</li>
+                <li>Google is not responsible for the app or its content</li>
+                <li>Google has no obligation to provide support for the app</li>
+                <li>You may contact Google regarding refunds in accordance with Google's policies</li>
+            </ul>
+            
+            <h2>4. Privacy and Data Collection</h2>
+            
+            <p>Your privacy is important to us. The app's data collection and usage practices are governed by our Privacy Policy, which is incorporated into this EULA by reference. By using the app, you consent to the collection and use of your information as described in the Privacy Policy.</p>
+            
+            <h2>5. User-Generated Content</h2>
+            
+            <h3>5.1 Quiz Input</h3>
+            <p>When you input quiz topics, keywords, or other information:</p>
+            <ul>
+                <li>You retain ownership of your original input</li>
+                <li>You grant us a license to use your input to generate quizzes</li>
+                <li>AI-generated content based on your input becomes part of our service</li>
+                <li>You represent that your input doesn't violate any third-party rights</li>
+            </ul>
+            
+            <h3>5.2 Content Standards</h3>
+            <p>All user input must comply with our content standards:</p>
+            <ul>
+                <li>No offensive, harmful, or inappropriate content</li>
+                <li>No copyrighted material without permission</li>
+                <li>No personal information of others</li>
+                <li>No content that violates applicable laws</li>
+            </ul>
+            
+            <h2>6. App Updates and Modifications</h2>
+            
+            <h3>6.1 Updates</h3>
+            <ul>
+                <li>We may provide updates to improve functionality, security, or user experience</li>
+                <li>Some updates may be required for continued use of the app</li>
+                <li>Updates are subject to this EULA unless they include separate terms</li>
+            </ul>
+            
+            <h3>6.2 Feature Changes</h3>
+            <ul>
+                <li>We may add, modify, or remove features at our discretion</li>
+                <li>We will provide reasonable notice of significant changes</li>
+                <li>Continued use after changes constitutes acceptance</li>
+            </ul>
+            
+            <h2>7. Disclaimer of Warranties</h2>
+            
+            <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING:</p>
+            <ul>
+                <li>MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</li>
+                <li>NON-INFRINGEMENT OF THIRD-PARTY RIGHTS</li>
+                <li>ACCURACY OR COMPLETENESS OF AI-GENERATED CONTENT</li>
+                <li>UNINTERRUPTED OR ERROR-FREE OPERATION</li>
+                <li>SECURITY OF DATA TRANSMISSION</li>
+            </ul>
+            
+            <h2>8. Limitation of Liability</h2>
+            
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</p>
+            <ul>
+                <li>WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES</li>
+                <li>OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP (IF ANY)</li>
+                <li>WE ARE NOT LIABLE FOR DAMAGES CAUSED BY YOUR MISUSE OF THE APP</li>
+                <li>WE ARE NOT RESPONSIBLE FOR THIRD-PARTY CONTENT OR SERVICES</li>
+            </ul>
+            
+            <h2>9. Indemnification</h2>
+            
+            <p>You agree to indemnify and hold us harmless from any claims, damages, or expenses arising from:</p>
+            <ul>
+                <li>Your use of the app in violation of this EULA</li>
+                <li>Your violation of any third-party rights</li>
+                <li>Content you submit or generate through the app</li>
+                <li>Your breach of applicable laws or regulations</li>
+            </ul>
+            
+            <h2>10. Termination</h2>
+            
+            <h3>10.1 Termination by You</h3>
+            <ul>
+                <li>You may terminate this EULA by uninstalling the app</li>
+                <li>You may request account deletion through the app or by contacting us</li>
+                <li>Termination does not eliminate obligations that arose before termination</li>
+            </ul>
+            
+            <h3>10.2 Termination by Us</h3>
+            <ul>
+                <li>We may terminate this EULA if you violate its terms</li>
+                <li>We may discontinue the app with reasonable notice</li>
+                <li>Upon termination, you must cease using the app and delete all copies</li>
+            </ul>
+            
+            <h2>11. Export Compliance</h2>
+            
+            <p>The app may be subject to export control laws and regulations. You agree to comply with all applicable export and import laws and regulations in your use of the app.</p>
+            
+            <h2>12. Governing Law and Jurisdiction</h2>
+            
+            <p>This EULA is governed by the laws of the jurisdiction where our company is incorporated, without regard to conflict of law principles. Any disputes arising under this EULA shall be resolved through binding arbitration.</p>
+            
+            <h2>13. Severability</h2>
+            
+            <p>If any provision of this EULA is found to be unenforceable, the remaining provisions shall remain in full force and effect, and the unenforceable provision shall be replaced with an enforceable provision that most closely reflects the original intent.</p>
+            
+            <h2>14. Entire Agreement</h2>
+            
+            <p>This EULA, together with our Privacy Policy and Terms of Use, constitutes the entire agreement between you and us regarding the use of the app. This EULA supersedes all prior agreements and understandings.</p>
+            
+            <h2>15. Contact Information</h2>
+            
+            <div class="contact-info">
+                <h3>Questions About This EULA?</h3>
+                <p><strong>Email:</strong> this.is.awsm.asim@gmail.com</p>
+                <p><strong>Address:</strong> Delhi, India</p>
+                <p>We will respond to your inquiry within 5 business days.</p>
+            </div>
+            
+            <div class="highlight-box">
+                <p><strong>By downloading, installing, or using QuizzlerAI Play, you acknowledge that you have read, understood, and agree to be bound by this End-User License Agreement.</strong></p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms-of-use">Terms of Use</a>
+                <a href="/about">About</a>
+                <a href="/cookie-policy">Cookie Policy</a>
+                <a href="/eula">EULA</a>
+            </div>
+            <div class="footer-copyright">
+                © 2025 QuizzlerAI Play. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

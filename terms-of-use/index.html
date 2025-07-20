@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizzlerAI Play - Terms of Use</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Same styles as index.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #f0f0f0;
+            margin-bottom: 40px;
+        }
+        
+        .logo-container {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(111, 66, 226, 0.3);
+        }
+        
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .logo::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 15px solid #6f42e2;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            margin-left: 3px;
+        }
+        
+        .app-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #6f42e2;
+            margin-bottom: 10px;
+        }
+        
+        .app-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 400;
+        }
+        
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .nav-button {
+            background: linear-gradient(135deg, #6f42e2, #8b5cf6);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(111, 66, 226, 0.3);
+            text-decoration: none;
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(111, 66, 226, 0.4);
+        }
+        
+        .nav-button.active {
+            background: linear-gradient(135deg, #5b35d1, #7c3aed);
+            transform: translateY(-1px);
+        }
+        
+        h1 {
+            color: #6f42e2;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #6f42e2;
+            font-size: 1.4rem;
+            margin: 30px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        h3 {
+            color: #555;
+            font-size: 1.1rem;
+            margin: 20px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-left: 4px solid #6f42e2;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .contact-info {
+            background: #f9fafb;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+            border-top: 2px solid #f0f0f0;
+            color: #666;
+        }
+        
+        .last-updated {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .app-title {
+                font-size: 2rem;
+            }
+            
+            .nav {
+                gap: 10px;
+            }
+            
+            .nav-button {
+                padding: 10px 18px;
+                font-size: 0.9rem;
+            }
+            
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="../assets/qizzler-play-logo-play-icon.png" alt="QuizzlerAI Play Logo" class="logo">
+            </div>
+            <h1 class="app-title">QuizzlerAI Play</h1>
+            <p class="app-subtitle">AI-Powered Multiplayer Quiz Experience</p>
+        </header>
+        
+        <nav class="nav">
+            <a href="/" class="nav-button">Home</a>
+            <a href="/privacy-policy" class="nav-button">Privacy Policy</a>
+            <a href="/terms-of-use" class="nav-button active">Terms of Use</a>
+            <a href="/about" class="nav-button">About</a>
+            <a href="/cookie-policy" class="nav-button">Cookie Policy</a>
+            <a href="/eula" class="nav-button">EULA</a>
+        </nav>
+        
+        <section>
+            <div class="last-updated">Last Updated: June 11, 2025</div>
+            
+            <h1>Terms of Use</h1>
+            
+            <div class="highlight-box">
+                <p>Welcome to QuizzlerAI Play! These Terms of Use govern your access to and use of our AI-powered multiplayer quiz application. By using our app, you agree to these terms.</p>
+            </div>
+            
+            <h2>1. Acceptance of Terms</h2>
+            
+            <p>By downloading, installing, or using QuizzlerAI Play, you agree to be bound by these Terms of Use and our Privacy Policy. If you do not agree to these terms, please do not use our app.</p>
+            
+            <h2>2. Description of Service</h2>
+            
+            <p>QuizzlerAI Play is a mobile application that provides:</p>
+            <ul>
+                <li>AI-generated quizzes on various topics</li>
+                <li>Real-time multiplayer quiz competitions</li>
+                <li>Leaderboards and performance tracking</li>
+                <li>Customizable quiz parameters (difficulty, language, time limits)</li>
+                <li>Social features for playing with friends</li>
+            </ul>
+            
+            <h2>3. User Accounts</h2>
+            
+            <h3>3.1 Account Creation</h3>
+            <p>You may create an account using:</p>
+            <ul>
+                <li>Email address and password</li>
+                <li>Google account (all platforms)</li>
+                <li>Apple ID (iOS only)</li>
+            </ul>
+            
+            <h3>3.2 Account Responsibilities</h3>
+            <ul>
+                <li>Provide accurate and current information</li>
+                <li>Maintain the security of your account credentials</li>
+                <li>Notify us immediately of any unauthorized access</li>
+                <li>Take responsibility for all activities under your account</li>
+            </ul>
+            
+            <h2>4. Acceptable Use</h2>
+            
+            <h3>4.1 Permitted Uses</h3>
+            <ul>
+                <li>Create and participate in quizzes for educational and entertainment purposes</li>
+                <li>Compete fairly in multiplayer games</li>
+                <li>Share appropriate quiz topics and keywords</li>
+                <li>Interact respectfully with other users</li>
+            </ul>
+            
+            <h3>4.2 Prohibited Uses</h3>
+            <p>You may not:</p>
+            <ul>
+                <li>Create quizzes with offensive, harmful, or inappropriate content</li>
+                <li>Use the app for illegal activities or purposes</li>
+                <li>Attempt to cheat, exploit, or manipulate quiz results</li>
+                <li>Harass, threaten, or harm other users</li>
+                <li>Reverse engineer, modify, or distribute the app</li>
+                <li>Create automated systems to interact with the app</li>
+                <li>Share your account with others</li>
+            </ul>
+            
+            <h2>5. AI-Generated Content</h2>
+            
+            <h3>5.1 Content Generation</h3>
+            <ul>
+                <li>Quiz questions are generated using artificial intelligence</li>
+                <li>AI-generated content may occasionally contain errors or inaccuracies</li>
+                <li>We strive to provide high-quality, appropriate content but cannot guarantee perfection</li>
+                <li>Users are responsible for evaluating the accuracy of quiz content</li>
+            </ul>
+            
+            <h3>5.2 Content Moderation</h3>
+            <ul>
+                <li>We employ automated and manual content moderation</li>
+                <li>Inappropriate content will be removed</li>
+                <li>Users who repeatedly create inappropriate content may be suspended</li>
+            </ul>
+            
+            <h2>6. Intellectual Property</h2>
+            
+            <h3>6.1 Our Rights</h3>
+            <ul>
+                <li>QuizzlerAI Play and its technology are owned by us</li>
+                <li>All trademarks, logos, and brand elements are our property</li>
+                <li>The app's design, functionality, and code are protected by copyright</li>
+            </ul>
+            
+            <h3>6.2 User Content</h3>
+            <ul>
+                <li>You retain ownership of quiz topics and keywords you input</li>
+                <li>You grant us a license to use your input to generate quizzes</li>
+                <li>AI-generated quiz questions become part of our service</li>
+            </ul>
+            
+            <h2>7. Privacy and Data</h2>
+            
+            <p>Your privacy is important to us. Please review our Privacy Policy to understand how we collect, use, and protect your information. By using the app, you consent to our data practices as described in the Privacy Policy.</p>
+            
+            <h2>8. Multiplayer and Social Features</h2>
+            
+            <h3>8.1 Fair Play</h3>
+            <ul>
+                <li>Compete honestly without cheating or exploitation</li>
+                <li>Do not use external tools or assistance during quizzes</li>
+                <li>Report suspected cheating or inappropriate behavior</li>
+            </ul>
+            
+            <h3>8.2 Leaderboards</h3>
+            <ul>
+                <li>Leaderboard positions are based on quiz performance</li>
+                <li>We reserve the right to remove suspicious scores</li>
+                <li>Rankings may be reset periodically for fairness</li>
+            </ul>
+            
+            <h2>9. App Availability and Updates</h2>
+            
+            <ul>
+                <li>We strive to maintain app availability but cannot guarantee 100% uptime</li>
+                <li>We may update the app periodically to add features or fix issues</li>
+                <li>Some updates may require user action or device compatibility</li>
+                <li>We may discontinue features or the entire service with reasonable notice</li>
+            </ul>
+            
+            <h2>10. Limitation of Liability</h2>
+            
+            <p>To the maximum extent permitted by law:</p>
+            <ul>
+                <li>The app is provided "as is" without warranties</li>
+                <li>We are not liable for any damages arising from app use</li>
+                <li>Our liability is limited to the amount you paid for the app (if any)</li>
+                <li>We are not responsible for third-party content or services</li>
+            </ul>
+            
+            <h2>11. Termination</h2>
+            
+            <h3>11.1 By You</h3>
+            <ul>
+                <li>You may delete your account at any time</li>
+                <li>Uninstalling the app does not automatically delete your account</li>
+                <li>Contact us to request complete data deletion</li>
+            </ul>
+            
+            <h3>11.2 By Us</h3>
+            <ul>
+                <li>We may suspend or terminate accounts for terms violations</li>
+                <li>We may discontinue the service with 30 days' notice</li>
+                <li>Termination does not eliminate your responsibilities under these terms</li>
+            </ul>
+            
+            <h2>12. Changes to Terms</h2>
+            
+            <ul>
+                <li>We may update these terms periodically</li>
+                <li>Significant changes will be communicated through the app</li>
+                <li>Continued use after changes constitutes acceptance</li>
+                <li>Previous versions are available upon request</li>
+            </ul>
+            
+            <h2>13. Governing Law</h2>
+            
+            <p>These terms are governed by the laws of the jurisdiction where our company is incorporated. Any disputes will be resolved through binding arbitration.</p>
+            
+            <h2>14. Contact Information</h2>
+            
+            <div class="contact-info">
+                <p>For questions about these Terms of Use:</p>
+                <p><strong>Email:</strong> this.is.awsm.asim@gmail.com</p>
+                <p><strong>Support:</strong> this.is.awsm.asim@gmail.com</p>
+                <p>We will respond to your inquiry within 5 business days.</p>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <p>© 2025 QuizzlerAI Play. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
