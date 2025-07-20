@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QuizzlerAI - The AI-Powered Quiz Game</title>
+  <link rel="icon" href="./assets/qizzler-play-logo-play-icon.png">
   <meta name="description" content="Join the quiz revolution with QuizzlerAI. Get 100 free coins daily as a launch benefit. Available on the App Store!">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +26,14 @@
       }
     }
   </script>
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Ie Ts Ms Ee Es Rs capture Ge calculateEventProperties Os register register_once register_for_session unregister unregister_for_session js getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Ds Fs createPersonProfile Ls Ps opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Cs debug I As getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_3Ng2KQ5jF9fqpy64eP9ui4AU8lSR9cdEwiO6vPOAk50', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'always', // or 'always' to create profiles for anonymous users as well
+    })
+</script>
 </head>
 <body class="font-inter bg-gray-50 text-gray-800 antialiased">
   
@@ -40,7 +49,8 @@
         
         <!-- App Store Button -->
         <a href="https://apps.apple.com/us/app/quizzlerai-play/id6746399137" 
-           class="inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-brand-purple rounded-lg hover:bg-purple-700 transition-colors duration-200">
+           class="inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-brand-purple rounded-lg hover:bg-purple-700 transition-colors duration-200"
+           onclick="posthog.capture('app_store_redirect', { property: 'navigation_bar' })">
           Install Now
         </a>
       </div>
@@ -64,13 +74,14 @@
       
       <!-- Subtitle -->
       <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-        A new, AI-powered quiz experience that's as smart as you are. Challenge friends, create your own quizzes, and learn something new every day.
+        An engaging, AI-enhanced quiz experience designed to match your wit. Challenge friends, create your own quizzes, and learn something new every day.
       </p>
       
       <!-- CTA Button -->
       <div class="flex justify-center">
         <a href="https://apps.apple.com/us/app/quizzlerai-play/id6746399137" 
-           class="inline-flex items-center px-8 py-3 text-lg font-semibold text-white bg-brand-purple rounded-lg hover:bg-purple-700 transition-colors duration-200 shadow-sm">
+           class="inline-flex items-center px-8 py-3 text-lg font-semibold text-white bg-brand-purple rounded-lg hover:bg-purple-700 transition-colors duration-200 shadow-sm"
+           onclick="posthog.capture('app_store_redirect', { property: 'hero_section' })">
           Try it Now
         </a>
       </div>
@@ -194,7 +205,8 @@
           Download QuizzlerAI on the App Store today and start your quiz adventure!
         </p>
         <a href="https://apps.apple.com/us/app/quizzlerai-play/id6746399137" 
-           class="inline-flex items-center px-8 py-3 text-lg font-semibold text-brand-purple bg-white rounded-lg hover:bg-gray-200 transition-colors duration-200 shadow-sm">
+           class="inline-flex items-center px-8 py-3 text-lg font-semibold text-brand-purple bg-white rounded-lg hover:bg-gray-200 transition-colors duration-200 shadow-sm"
+           onclick="posthog.capture('app_store_redirect', { property: 'call_to_action_section' })">
           Download Now
         </a>
       </div>
